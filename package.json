@@ -4,8 +4,9 @@
   "main": "dist/index.js",
   "author": "Pedro Cavallaro",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@PedroCavallaro"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PedroCavallaro/focvs-utils"
   },
   "scripts": {
     "build": "nest build",
