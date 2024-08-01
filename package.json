@@ -1,12 +1,11 @@
 {
-  "name": "@focvs/utils",
+  "name": "focvs",
   "version": "1.0.0",
   "main": "dist/index.js",
   "author": "Pedro Cavallaro",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@git.in8.com.br:maverick/verificador-loc/utils.git"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@PedroCavallaro"
   },
   "scripts": {
     "build": "nest build",
