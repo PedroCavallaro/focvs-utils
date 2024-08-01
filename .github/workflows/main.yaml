@@ -16,9 +16,9 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
       - run: npm install
       - run: npm run build
-      # - run: |
-      #     echo "@PedroCavallaro:registry=https://npm.pkg.github.com" >> .npmrc
-      #     echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
+      - run: |
+          echo "@PedroCavallaro:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
       - run: npm publish 
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
