@@ -8,10 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/PedroCavallaro/focvs-utils.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "scripts": {
+   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
