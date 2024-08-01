@@ -9,7 +9,7 @@
     "url": "git+https://github.com/PedroCavallaro/focvs-utils.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "@PedroCavallaro:registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "build": "nest build",
