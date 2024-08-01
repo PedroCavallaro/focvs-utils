@@ -2,7 +2,7 @@ name: focvs-package
 
 on: 
   push:
-    branchs: 
+    branches: 
       - master
 
 jobs:
@@ -11,18 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      with:
-        node-version: 20
-        registry-url: https://npm.pkg.github.com/
-        scope: '@PedroCavallaro'
-    - run: npm install
-    - run: npm run build
-    - run: npm publish
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-
-
-
-
-
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+          scope: '@PedroCavallaro'
+      - run: npm install
+      - run: npm run build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
