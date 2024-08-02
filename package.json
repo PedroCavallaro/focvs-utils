@@ -1,5 +1,5 @@
 {
-  "name": "@PedroCavallaro/focvs-utils",
+  "name": "@pedrocavallaro/focvs-utils",
   "version": "0.0.2",
   "main": "dist/index.js",
   "author": "Pedro Cavallaro",
