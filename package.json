@@ -1,6 +1,6 @@
 {
   "name": "@PedroCavallaro/focvs-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "author": "Pedro Cavallaro",
   "license": "ISC",
