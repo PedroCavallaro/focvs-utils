@@ -20,8 +20,7 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: |
-          echo "@PedroCavallaro:registry=https://npm.pkg.github.com" >> .npmrc
-          echo ${{ secrets.NPM_AUTH_TOKEN }}
+          echo "@pedro_cavallaro:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
       - run: npm publish 
         env:
